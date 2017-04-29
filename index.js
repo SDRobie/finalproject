@@ -88,7 +88,7 @@ app.get('/', function(req, res) {
   // mongoose.connection.db.listCollections();
   // res.status(200).send('Health Check');
   // res.redirect(allCommenters);
-  res.status(200).sendFile('index.html');
+  res.status(200).sendFile(__dirname + '/bootstrap/index.html');
   // res.status(200).sendFile('/Users/SDRobie/Documents/Development/capstone/bootstrap/index.html');
 
 });
