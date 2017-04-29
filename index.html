@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>StreamerIRL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 20px;
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #6441a5;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height:auto;}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">StreamerIRL</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Upcoming Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li><a href="https://api.twitch.tv/kraken/users/cuttertibbs?client_id=hj16tfrz49tuymzht8rndlertyte1i"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+        <li><a href="/auth/twitch"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="https://www.twitch.tv">Twitch.tv</a></p>
+      <p><a href="https://www.instagram.com">Instagram</a></p>
+      <p><a href="https://www.youtube.com">Youtube</a></p>
+    </div>
+    <div class="col-sm-8 text-left">
+      <h1>Your Favorite Streamer</h1>
+      <p><a href="https://api.mlab.com/api/1/databases/streamerirl/collections/Streamers?q={'userState': 'streamer'}&apiKey=QKT4P4gumjJuuv_8r-OWBa3j9_Z_k7A6">My Latest Post</a></p>
+      <hr>
+      <h3>Comments</h3>
+      <p>All comments are reviewed by a moderator</p>
+      <p><a href="https://api.mlab.com/api/1/databases/streamerirl/collections/Streamers?apiKey=QKT4P4gumjJuuv_8r-OWBa3j9_Z_k7A6">See all Comments</a></p>
+      <form action="/comment" method="post" class="form-signin">
+        <h3 class="form-signin-heading">Please leave a comment</h3>
+        <label for="userName"  class="sr-only">userName</label>
+        <input type="userName" id="userName" name="userName" class="form-control" placeholder="Username" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="comment" name="comment" id="comment" class="form-control" placeholder="comment" required>
+        <div class="checkbox">
+          <label>
+            <input name="rememberme" type="checkbox"> Remember me
+          </label>
+        </div>
+        <input class="btn btn-lg btn-primary btn-block" type="submit">
+      </form>
+
+    </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <img src="http://www.turnerduckworth.com/media/filer_public/86/18/86187bcc-752a-46f4-94d8-0ce54b98cd46/td-amazon-smile-logo-01-large.jpg" alt="amazon.com"
+        style="width:138px;height:89px;">
+      </div>
+      <div class="well">
+        <a class="btn btn-default" href="http://www.doctorswithoutborders.org/" role="button">Donate Today!</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <img src="https://s3-us-west-2.amazonaws.com/web-design-ext-production/p/Combologo_474x356.png" alt="Twitch"
+  style="width:118px;height:89px;">
+</footer>
+
+</body>
+</html>
