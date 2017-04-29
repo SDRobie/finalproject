@@ -1,0 +1,63 @@
+/*
+[
+  {
+    "_id": "58bb278ed5a4120d39be6fdb",
+    "userState": "streamer",
+    "userName": "Shirley",
+    "comment": "Hai Guyz, I'll be at TwitchCon next Thursday. Come see me at Booth 42.",
+    "password": "deluxenachos",
+    "dateStamp": null
+  },
+  {
+    "_id": "58bcaf80b8fd540abaef4162",
+    "userState": "mod",
+    "userName": "Stoker",
+    "comment": "The next post will be deleted because I abuse my mod authority.",
+    "password": "modsrulescrubsdrool",
+    "dateStamp": null
+  },
+  {
+    "_id": "58bcb05db6bcb40ad51bb204",
+    "userState": "subscriber",
+    "userName": "JohnnyCash",
+    "comment": "I am a sub who paid money to watch this kid play games.",
+    "password": "disposableincome",
+    "dateStamp": null
+  },
+  {
+    "_id": "58be0d912a8d103ae11a1b30",
+    "userState": "follower",
+    "userName": "OliverTwist",
+    "comment": "I enjoy free things. I am a follower only.",
+    "password": "linux",
+    "dateStamp": null
+  }
+],
+*/
+
+
+{
+   "_total": 2,
+   "users": [
+      {
+         "_id": "44322889",
+         "bio": "Just a gamer playing games and chatting. :)",
+         "created_at": "2013-06-03T19:12:02.580593Z",
+         "display_name": "dallas",
+         "logo": "https://static-cdn.jtvnw.net/jtv_user_pictures/dallas-profile_image-1a2c906ee2c35f12-300x300.png",
+         "name": "dallas",
+         "type": "staff",
+         "updated_at": "2017-02-09T16:32:06.784398Z"
+      },
+      {
+         "_id": "129454141",
+         "bio": null,
+         "created_at": "2016-07-13T14:40:42.398257Z",
+         "display_name": "dallasnchains",
+         "logo": null,
+         "name": "dallasnchains",
+         "type": "user",
+         "updated_at": "2017-02-04T14:32:38.626459Z"
+      }
+   ]
+}
