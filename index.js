@@ -64,7 +64,7 @@ app.get("/auth/twitch/callback", passport.authenticate("twitch", { failureRedire
 //   url: "https://api.twitch.tv/kraken",
 //   headers: {
 //     "Client-ID": "hj16tfrz49tuymzht8rndlertyte1i",
-//     "Authorization": "a1cw6os8nszfva7zrww1d6jfs7vdfe"
+//     "Authorization": "a1cw6os8nszfva7zrww1d6jfs7vdfe"``
 //   }
 // }, function(err, res, body) {
 //   console.log(body);

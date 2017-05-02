@@ -17,7 +17,7 @@ module.exports = function (passport) {
     clientID: "hj16tfrz49tuymzht8rndlertyte1i",
     //clientSecret: TWITCH_CLIENT_SECRET,
     clientSecret: "a1cw6os8nszfva7zrww1d6jfs7vdfe",
-    callbackURL: "http://127.0.0.1:8080/auth/twitch/callback",
+    callbackURL: "http://streamerirl.herokuapp.com/auth/twitch",
     //callbackURL: "http://127.0.0.1:3000/auth/twitch/callback",
     scope: "user_read"
   },
