@@ -55,7 +55,7 @@ db.once('open', function() {
 // app.use(express.static(process.cwd() + '/assets'));
 //
 app.get("/auth/twitch", passport.authenticate("twitch", {forceVerify: true}));
-app.get("/auth/twitch/callback", passport.authenticate("twitch", { failureRedirect: "/" }), function(req, res) {
+app.get("/auth/twitch", passport.authenticate("twitch", { failureRedirect: "/" }), function(req, res) {
     // Successful authentication, redirect home.
     res.redirect("/");
 });
